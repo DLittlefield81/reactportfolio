@@ -68,9 +68,10 @@
     width: 100%;
 }
 
-.footer-name {
+.footer__social {
     display: flex;
-    justify-content: center;
+    justify-content: center ;
+    text-align: center;
 }
 
 .footer-bottom__name {

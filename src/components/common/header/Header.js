@@ -7,11 +7,11 @@ const Header = () => {
         <React.Fragment>
             <AppBar sx={{ background: "blue" }}>
                 <Toolbar>
+                    <DrawerComp />
+                    <Typography sx={{ fontSize: '1.5em', paddingLeft: '10%' }}> Dennis Littlefield Portfolio </Typography>
 
-                    <Typography sx={{fontSize:'1.5em', paddingLeft: '10%'}}> Dennis Littlefield Portfolio </Typography>
-                    <DrawerComp/>
                 </Toolbar>
-                
+
             </AppBar>
         </React.Fragment>
     )
