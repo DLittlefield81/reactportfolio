@@ -6,14 +6,13 @@ import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Resume from './components/pages/Resume';
 
-
 function App() {
   return (
     <Router>
       <div>
         <Header />
         <Routes>
-          <Route path='/about' element={<About />} ></Route>
+          <Route path='/' element={<About />} ></Route>
           <Route path='/projects' element={<Projects />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/resume' element={<Resume />}></Route>

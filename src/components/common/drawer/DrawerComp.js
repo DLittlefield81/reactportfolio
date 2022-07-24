@@ -5,7 +5,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ImageAvatars from '../../ImageAvatars';
 
 // Setup NavItems
-const PAGES = ['About', 'Projects', 'Contact', 'Resume'];
+//  About is not contained in pages as it is the Default Page.
+const PAGES = ['Projects', 'Contact', 'Resume'];
 
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -14,6 +15,14 @@ const DrawerComp = () => {
       <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <List sx={{ padding: '30px' }}>
           <ImageAvatars />
+          <ListItemButton sx={{ textAlign: 'Center' }} onClick={() => setOpenDrawer(false)}>
+            <ListItemIcon>
+              <ListItemText>
+                <Link to="/" style={{ textDecoration: 'none' }}>About</Link>
+              </ListItemText>
+            </ListItemIcon>
+          </ListItemButton>
+          
           {
             PAGES.map((page, index) => (
               <ListItemButton sx={{ textAlign: 'Center' }} onClick={() => setOpenDrawer(false)} key={index}>
