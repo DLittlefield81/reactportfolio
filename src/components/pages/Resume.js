@@ -1,26 +1,13 @@
 import React, { useState } from 'react'
+import { Button } from '@mui/material'
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-//import './Resume.css';
+import Pdf from "../images/DennisLittlefieldResume.pdf";
+import './Resume.css';
 function Resume() {
-
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
-    setPageNumber(1);
-  }
-
-  function changePage(offSet) {
-    setPageNumber(prevPageNumber => prevPageNumber + offSet);
-  }
-
-  function changePageBack() {
-    changePage(-1)
-  }
-
-  function changePageNext() {
-    changePage(+1)
   }
 
   return (
@@ -35,14 +22,20 @@ function Resume() {
               new Array(numPages),
               (el, index) => (
                 <Page
+                  width="1024"
                   key={`page_${index + 1}`}
                   pageNumber={index + 1}
                 />
               )
             )}
+            <a href={Pdf} className="text-faded white-link" style={{ textDecoration: 'none' }} download>
+              <Button variant="contained" color="success" size="large" startIcon={<CloudDownloadIcon />}>Download Resume</Button></a>
+
           </Document>
         </div>
       </center>
+      <p className="text-center">
+      </p>
     </div>
   );
 }

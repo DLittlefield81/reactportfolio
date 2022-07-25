@@ -1,18 +1,17 @@
-import React from 'react'
-
+import React from 'react';
+import ContactUs from '../contactForm';
 const Contact = () => {
   return (
-    <div>
-      <br/>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      
-      
-      Contact</div>
-  )
+    <div className="App">
+      <div className="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <ContactUs />
+      </div>
+    </div>
+  );
 }
 
 export default Contact

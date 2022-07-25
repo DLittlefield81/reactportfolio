@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import {Button, Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ImageAvatars from '../../ImageAvatars';
 
@@ -18,7 +18,8 @@ const DrawerComp = () => {
           <ListItemButton sx={{ textAlign: 'Center' }} onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <ListItemText>
-                <Link to="/" style={{ textDecoration: 'none' }}>About</Link>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                  <Button variant="contained" color="success" size="large">About</Button></Link>
               </ListItemText>
             </ListItemIcon>
           </ListItemButton>
@@ -28,7 +29,9 @@ const DrawerComp = () => {
               <ListItemButton sx={{ textAlign: 'Center' }} onClick={() => setOpenDrawer(false)} key={index}>
                 <ListItemIcon>
                   <ListItemText>
-                    <Link to={page} style={{textDecoration: 'none'}}>{page}</Link>
+                    <Link to={page} style={{ textDecoration: 'none' }} >
+                      <Button variant="contained" color="success" size="large">{page}</Button>
+                    </Link>
                   </ListItemText>
                 </ListItemIcon>
               </ListItemButton>

@@ -1,13 +1,16 @@
 import React from 'react'
+import ProjectCard from '../Card'
+
 
 const Projects = () => {
   return (
-    <div>   <br />
+    <div>   
       <br />
       <br />
-      <br />
-      <br />
-      <br />Projects</div>
+      <br /><h1>Projects</h1>
+      <hr/>
+    <ProjectCard/>
+    </div>
   )
 }
 
