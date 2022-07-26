@@ -1,42 +1,56 @@
 import React, { useState } from 'react'
 import { Button } from '@mui/material'
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import Pdf from "../images/DennisLittlefieldResume.pdf";
-import './Resume.css';
+
 function Resume() {
-  const [numPages, setNumPages] = useState(null);
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
+  const [pages] = useState([
+    {
+      name: "resume"
+    }
+  ]);
+  const [currentPage] = useState(pages[0]);
   return (
-    <div className="Resume text-center align-center" >
-      <br />
-      <br />
-      <br />
-      <center>
-        <div>
-          <Document file="/resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-            {Array.from(
-              new Array(numPages),
-              (el, index) => (
-                <Page
-                  width="1024"
-                  key={`page_${index + 1}`}
-                  pageNumber={index + 1}
-                />
-              )
-            )}
-            <a href={Pdf} className="text-faded white-link" style={{ textDecoration: 'none' }} download>
-              <Button variant="contained" color="success" size="large" startIcon={<CloudDownloadIcon />}>Download Resume</Button></a>
+    <section className="bg-dark">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-10 mx-auto text-white mb-4">
+            <br /><br /><br /><br />
+            <h1 className="text-center">Resume</h1>
+            <hr className="light my-4" />
+            <h3>Front-end Proficiencies</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Git</li>
+              <li>React</li>
+              <li>Bootstrap</li>
+              <li>SASS</li>
+              <li>WordPress</li>
+            </ul>
+            <h3>Back-end Proficiencies</h3>
+            <ul>
+              <li>APIs</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>MySQL, Sequelize</li>
+              <li>MongoDB, Mongoose</li>
+              <li>REST</li>
+              <li>MERN Stack</li>
+            </ul>
+            
+           
+            <p className="text-center">
+              <a href={Pdf} className="text-faded white-link" style={{ textDecoration: 'none' }} download>
+                <Button variant="contained" color="success" size="large" startIcon={<CloudDownloadIcon />}>Download Resume</Button></a>
 
-          </Document>
+            </p>
+          </div>
         </div>
-      </center>
-      <p className="text-center">
-      </p>
-    </div>
+      </div>
+    </section>
   );
 }
 

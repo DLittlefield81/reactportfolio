@@ -4,11 +4,7 @@ const Contact = () => {
   return (
     <div className="App">
       <div className="container">
-        <br />
-        <br />
-        <br />
-        <br />
-        <ContactUs />
+         <ContactUs />
       </div>
     </div>
   );

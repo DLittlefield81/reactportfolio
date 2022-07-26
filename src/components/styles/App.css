@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Edu+VIC+WA+NT+Beginner&display=swap');
-
-body {
+* {
+margin-top: 100px;
+}
+.body {
+    background-color: #A6D1E6;
     padding-top: 100px;
     font-family: 'Edu VIC WA NT Beginner', Verdana, Geneva, Tahoma, sans-serif;
 }
+

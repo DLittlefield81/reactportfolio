@@ -20,6 +20,9 @@ import emailjs from '@emailjs/browser';
              <div className="container">
                  <div className="row">
                      <div className="col-lg-10 mx-auto text-dark mb-4">
+                         <br />
+                         <br />
+                         <br />
                          <h1 className="text-center">Contact Me</h1>
                          <hr className="light my-4" />
                          <form id="contact-form" onSubmit={sendEmail} className="mb-5">

@@ -6,7 +6,7 @@ import ImageAvatars from '../../ImageAvatars';
 
 // Setup NavItems
 //  About is not contained in pages as it is the Default Page.
-const PAGES = ['Projects', 'Contact', 'Resume'];
+const PAGES = [ 'Portfolio','Contact', 'Resume'];
 
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
