@@ -1,3 +1,4 @@
+import ProfilePhoto from "./ProfilePhoto.jpg";
 import htmlPortfolio from "./TheLittlefieldPortfolio.png";
 //Projects
 import petPlaydate from "./petplaydate.png";
@@ -18,6 +19,7 @@ import livelihoodkitchen from "./livelihoodkitchen.png";
 import tashan from "./tashan.png";
 
 export default {
+    ProfilePhoto,
     htmlPortfolio,
     petPlaydate,
     flyteChecker,
