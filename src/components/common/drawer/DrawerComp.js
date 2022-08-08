@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import {Button, Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ImageAvatars from '../../ImageAvatars';
 import './DrawerComp.css'
@@ -19,7 +19,7 @@ const DrawerComp = () => {
           <ListItemButton sx={{ textAlign: 'Center' }} onClick={() => setOpenDrawer(false)}>
             <ListItemIcon>
               <ListItemText>
-                <NavLink to="/" style={({ isActive }) => ({
+                <NavLink to="/reactportfolio/" style={({ isActive }) => ({
                   fontFamily: 'Helvetica',
                   fontSize: '20px',
                   textDecoration: 'none',
@@ -29,8 +29,8 @@ const DrawerComp = () => {
                   paddingLeft: '50px',
                   paddingRight: '50px',
                   boxShadow: '3px 5px 5px #888888',
-                  color: isActive ? '#000' : '#545e6f',
-                  background: isActive ? '#f0f0f0' : '#A6D1E6',
+                  color: isActive ? '#002B5B' : '#fff',
+                  background: isActive ? '#8FE3CF' : '#002B5B',
                 })}
                 >
                  About</NavLink>
@@ -44,7 +44,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemText>
                     <NavLink to={page} style={({ isActive }) => ({
-                      fontFamily: 'Helvetica',
+                      fontFamily: 'Josefin Sans',
                       fontSize: '20px',
                       textDecoration: 'none',
                       justifyContent: 'center',
@@ -53,8 +53,8 @@ const DrawerComp = () => {
                       paddingLeft: '50px',
                       paddingRight: '50px',
                       boxShadow: '3px 5px 5px #888888',
-                      color: isActive ? '#000' : '#545e6f',
-                      background: isActive ? '#f0f0f0' : '#A6D1E6',
+                      color: isActive ? '#002B5B' : '#fff',
+                      background: isActive ? '#8FE3CF' : '#002B5B',
                     })}
                     >
                       {page}

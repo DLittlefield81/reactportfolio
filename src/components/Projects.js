@@ -8,8 +8,6 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { blue } from '@mui/material/colors';
-
 import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
@@ -23,10 +21,11 @@ function Project(props) {
     <Card  sx={{ maxWidth: 345, minWidth: 345, margin: 2 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: blue }} aria-label="recipe">
+          <Avatar  sx={{ bgcolor: "#002B5B" }} aria-label="recipe">
            <CoPresentIcon/>
           </Avatar>
         }
+        
         title={props.title}
         subheader={props.tech}
       />
@@ -44,7 +43,7 @@ function Project(props) {
       <CardActions disableSpacing>
        <Tooltip title="View Repository on GitHub">
         <IconButton aria-label="GitHub">
-            <Link color="secondary" underline="none" href={props.repository} rel="noreferrer" target="_blank" className="btn btn-primary">
+            <Link color="primary" underline="none" href={props.repository} rel="noreferrer" target="_blank" className="btn btn-primary">
               <Typography>
                 <GitHubIcon fontSize="large" />
             </Typography>
@@ -53,7 +52,7 @@ function Project(props) {
       </Tooltip>
     <Tooltip title="View Deployed Site">
         <IconButton aria-label="View Deployed Site">
-          <Link color="secondary" underline="none"  href={props.deployed} rel="noreferrer" target="_blank" className="btn btn-primary">
+          <Link color="primary" underline="none"  href={props.deployed} rel="noreferrer" target="_blank" className="btn btn-primary">
             <Typography>
               <PreviewIcon fontSize="large" />
             </Typography>

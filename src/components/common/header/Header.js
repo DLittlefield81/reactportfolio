@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography } from '@mui/material'
+import { AppBar, Toolbar, Typography, Link } from '@mui/material'
 import DrawerComp from '../drawer'
 import './Header.css';
 
@@ -9,8 +9,9 @@ const Header = () => {
             <AppBar color="primary">
                 <Toolbar>
                     <DrawerComp />
-                    <Typography fontFamily="Roboto" variant="h1" sx={{ fontSize: '28px', paddingLeft: '10%' }}> Dennis Littlefield Portfolio </Typography>
-
+                    <Link underline="none" href="/reactportfolio/">
+                        <Typography color="secondary" fontFamily="Josefin Sans" variant="h1" sx={{ fontSize: '28px' }}> Dennis Littlefield</Typography>
+                    </Link>
                 </Toolbar>
 
             </AppBar>

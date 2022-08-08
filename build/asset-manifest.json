@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactportfolio/static/css/main.ba72644c.css",
-    "main.js": "/reactportfolio/static/js/main.decbcfba.js",
+    "main.css": "/reactportfolio/static/css/main.8dbc9c15.css",
+    "main.js": "/reactportfolio/static/js/main.93ad5440.js",
     "static/media/dennis.jpg": "/reactportfolio/static/media/dennis.58df6317bff859b33e76.jpg",
     "static/media/ProfilePhoto.jpg": "/reactportfolio/static/media/ProfilePhoto.cf4450d409b976aa49a7.jpg",
     "static/media/TheLittlefieldPortfolio.png": "/reactportfolio/static/media/TheLittlefieldPortfolio.92abe4c54bbf6c55cad0.png",
@@ -14,11 +14,11 @@
     "static/media/adventureessential.png": "/reactportfolio/static/media/adventureessential.b9da01cba1d1e642a1b2.png",
     "static/media/TeamProfileGenerator.png": "/reactportfolio/static/media/TeamProfileGenerator.cfc82d135afa39a9f218.png",
     "index.html": "/reactportfolio/index.html",
-    "main.ba72644c.css.map": "/reactportfolio/static/css/main.ba72644c.css.map",
-    "main.decbcfba.js.map": "/reactportfolio/static/js/main.decbcfba.js.map"
+    "main.8dbc9c15.css.map": "/reactportfolio/static/css/main.8dbc9c15.css.map",
+    "main.93ad5440.js.map": "/reactportfolio/static/js/main.93ad5440.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba72644c.css",
-    "static/js/main.decbcfba.js"
+    "static/css/main.8dbc9c15.css",
+    "static/js/main.93ad5440.js"
   ]
 }

@@ -11,9 +11,9 @@ const Footer = () => {
     <section className='footer'> 
       <hr className='footer__line ' />
       <section className='footer__social'>
-        <div><a href='https://www.linkedin.com/in/dennislittlefield/'><LinkedInIcon sx={{ fontSize: "40px" }} /></a></div>
-        <div><a href='https://github.com/DLittlefield81/'><GitHubIcon sx={{ fontSize: "40px" }} /></a></div>
-        <div><a href='https://www.facebook.com/DLittlefield1981'><FacebookIcon sx={{ fontSize: "40px" }} /></a></div>
+        <div><a href='https://www.linkedin.com/in/dennislittlefield/'><LinkedInIcon color='primary' sx={{ fontSize: "40px" }} /></a></div>
+        <div><a href='https://github.com/DLittlefield81/'><GitHubIcon color='primary' sx={{ fontSize: "40px" }} /></a></div>
+        <div><a href='https://www.facebook.com/DLittlefield1981'><FacebookIcon color='primary' sx={{ fontSize: "40px" }} /></a></div>
       </section>
     </section>
   )

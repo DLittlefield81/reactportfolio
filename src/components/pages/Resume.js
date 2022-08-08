@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Box, Tooltip, Link } from '@mui/material'
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import { Button, Box, Tooltip, Link, Typography } from '@mui/material'
 import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 
 class Resume extends Component {
@@ -8,27 +7,35 @@ class Resume extends Component {
     let iframeSrc = "https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub?embedded=true";
     let dlLink ="https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub"
     let style = {
-      mx:"auto",
-      
-      width: '100%',
+      width: '80%',
       height: '700px',
       border: 'none'
     };
 
     return (
-      <Box style={{ mx: "auto", marginTop: `100px` }}>
-        <h1>Resume
-          </h1>
+      <Box style={{ mx: "auto", marginTop: `80px` }}>
+        <Typography fontFamily="Josefin Sans" variant="h2" color="primary">
+          Resume
+        </Typography>
         <hr />
-        <div style={{  justifyContent: 'center', alignItems: 'center'}}>
-        <iframe title="Dennis Littlefield Resume" src={iframeSrc}
-          style={style}></iframe>
-        <Tooltip title="Download My Resume">
+        <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
+          <div className='col' style={{width: '1100px'}}>
+            <div className='row'>
+              <iframe title="Dennis Littlefield Resume" src={iframeSrc}
+                style={style}>
+              </iframe>
+            </div>
+            <div className='row' style={{ justifyContent: 'center', alignItems: 'center' }}>
+              <Tooltip title="Download My Resume">
             <Link href={dlLink} target="_blank" style={{mx:'auto', textDecoration: 'none' }} download>
-          <Button style={{  justifyContent: 'center', alignItems: 'center'}}variant="contained" color="secondary" fontsize="24">
-                <LocalPrintshopIcon color="primary" />  Download or Print My Resume
+          <Button style={{  justifyContent: 'center', alignItems: 'center'}}variant="contained" color="primary" fontsize="24">
+                <LocalPrintshopIcon color="secondary" />  Download or Print My Resume
           </Button></Link>
           </Tooltip>
+            </div>
+          </div>
+       
+        
         </div>
       </Box>
     );

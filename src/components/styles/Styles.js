@@ -2,12 +2,12 @@ import { createTheme } from '@mui/material';
 
 const Colors = {
     // PRIMARY COLORS
-    primary_main: '#a0877e',
-    primary_light: '#d1b7ad',
-    primary_dark: '#715a52',
-    secondary_main: '#ff7043',
-    secondary_light: '#ffa270',
-    secondary_dark: '#c63f17',
+    primary_main: '#2B4865',
+    primary_light: '#9be7ff',
+    primary_dark: '#2286c3',
+    secondary_main: '#8FE3CF',
+    secondary_light: '#7c43bd',
+    secondary_dark: '#12005e',
     // STATUS COLORS
     success: '#b2ff59',
     info: '#e1f5fe',
@@ -59,15 +59,15 @@ const theme = createTheme({
         },
         Typography: {
             fontFamily: [
-                'Montserrat Alternates',
-                'Roboto',
-                'Rubik',
-                'Kanit'
+                'Josefin Sans',
+                'Oleo Script Swash Caps',
+                'cursive',
+                'sans-serif'
             ].join(','),
 
         },
-        Swiper: {
-            marginTop: '50px',
+        Paper: {
+            marginTop: '200px',
         }
 
     }

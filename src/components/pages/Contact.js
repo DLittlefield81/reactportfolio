@@ -1,12 +1,15 @@
 import React from 'react';
+import {Typography, Box} from '@mui/material/';
 import ContactUs from '../contactForm';
 const Contact = () => {
   return (
-    <div className="App">
-      <div className="container">
-         <ContactUs />
-      </div>
-    </div>
+    <Box style={{ mx: "auto", marginTop: `80px` }}>
+      <Typography fontFamily="Josefin Sans" variant="h2" color="primary">
+        Contact Me
+      </Typography>
+      <hr />
+      <ContactUs/>
+      </Box>
   );
 }
 
