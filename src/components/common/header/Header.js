@@ -6,10 +6,10 @@ import './Header.css';
 const Header = () => {
     return (
         <React.Fragment>
-            <AppBar sx={{ background: "blue" }}>
+            <AppBar color="primary">
                 <Toolbar>
                     <DrawerComp />
-                    <Typography variant="h1" sx={{ fontSize: '28px', paddingLeft: '10%' }}> Dennis Littlefield Portfolio </Typography>
+                    <Typography fontFamily="Roboto" variant="h1" sx={{ fontSize: '28px', paddingLeft: '10%' }}> Dennis Littlefield Portfolio </Typography>
 
                 </Toolbar>
 

@@ -6,10 +6,14 @@ import About from './components/pages/About';
 import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
 import Resume from './components/pages/Resume';
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
+import theme from './components/styles/Styles';
 
 function App() {
   return (
-
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
 
     <Router>
  
@@ -24,7 +28,7 @@ function App() {
         <Footer />
       </div>
     </Router>
-
+</ThemeProvider>
 
     
   )

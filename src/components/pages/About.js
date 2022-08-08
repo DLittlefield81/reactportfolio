@@ -8,7 +8,7 @@ import Images from '../images/projects';
 export default function About() {
   return (
    
-    <Card sx={{ marginTop: '100px', minWidth: 345, maxWidth: 345 }}>
+    <Card sx={{ mx:"auto", marginTop: '100px', minWidth: 345, maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -22,8 +22,7 @@ export default function About() {
             About Me
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            Full Stack Developer leveraging over 20 years of customer service, problem-solving, and a critical thinking background. Currently working on a certificate as a Full Stack Developer from the University of Toronto, with newly developed skills in JavaScript, NodeJS, and ExpressJS. Experienced in optimizing productivity, efficiency and service quality across various environments.
           </Typography>
         </CardContent>
       </CardActionArea>

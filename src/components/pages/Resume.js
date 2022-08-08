@@ -1,57 +1,38 @@
-import React, { useState } from 'react'
-import { Button } from '@mui/material'
+import React, { Component } from 'react'
+import { Button, Box, Tooltip, Link } from '@mui/material'
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import Pdf from "../images/DennisLittlefieldResume.pdf";
+import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 
-function Resume() {
-  const [pages] = useState([
-    {
-      name: "resume"
-    }
-  ]);
-  const [currentPage] = useState(pages[0]);
-  return (
-    <section className="bg-dark">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-10 mx-auto text-white mb-4">
-            <br /><br /><br /><br />
-            <h1 className="text-center">Resume</h1>
-            <hr className="light my-4" />
-            <h3>Front-end Proficiencies</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>Git</li>
-              <li>React</li>
-              <li>Bootstrap</li>
-              <li>SASS</li>
-              <li>WordPress</li>
-            </ul>
-            <h3>Back-end Proficiencies</h3>
-            <ul>
-              <li>APIs</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>MySQL, Sequelize</li>
-              <li>MongoDB, Mongoose</li>
-              <li>REST</li>
-              <li>MERN Stack</li>
-            </ul>
-            
-           
-            <p className="text-center">
-              <a href={Pdf} className="text-faded white-link" style={{ textDecoration: 'none' }} download>
-                <Button variant="contained" color="success" size="large" startIcon={<CloudDownloadIcon />}>Download Resume</Button></a>
+class Resume extends Component {
+  render() {
+    let iframeSrc = "https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub?embedded=true";
+    let dlLink ="https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub"
+    let style = {
+      mx:"auto",
+      
+      width: '100%',
+      height: '700px',
+      border: 'none'
+    };
 
-            </p>
-          </div>
+    return (
+      <Box style={{ mx: "auto", marginTop: `100px` }}>
+        <h1>Resume
+          </h1>
+        <hr />
+        <div style={{  justifyContent: 'center', alignItems: 'center'}}>
+        <iframe title="Dennis Littlefield Resume" src={iframeSrc}
+          style={style}></iframe>
+        <Tooltip title="Download My Resume">
+            <Link href={dlLink} target="_blank" style={{mx:'auto', textDecoration: 'none' }} download>
+          <Button style={{  justifyContent: 'center', alignItems: 'center'}}variant="contained" color="secondary" fontsize="24">
+                <LocalPrintshopIcon color="primary" />  Download or Print My Resume
+          </Button></Link>
+          </Tooltip>
         </div>
-      </div>
-    </section>
-  );
+      </Box>
+    );
+  }
 }
 
 export default Resume;
