@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ba72644c.css",
+    "main.js": "/static/js/main.146496b0.js",
+    "static/media/dennis.jpg": "/static/media/dennis.58df6317bff859b33e76.jpg",
+    "static/media/ProfilePhoto.jpg": "/static/media/ProfilePhoto.cf4450d409b976aa49a7.jpg",
+    "static/media/TheLittlefieldPortfolio.png": "/static/media/TheLittlefieldPortfolio.92abe4c54bbf6c55cad0.png",
+    "static/media/tashan.png": "/static/media/tashan.c9342d5e12f362feb475.png",
+    "static/media/livelihoodkitchen.png": "/static/media/livelihoodkitchen.2f9130ed9b4bf77a7337.png",
+    "static/media/horiseon.png": "/static/media/horiseon.f1c41e05696dfc377032.png",
+    "static/media/camposlab.png": "/static/media/camposlab.6f1ef305a293fbb3de49.png",
+    "static/media/petplaydate.png": "/static/media/petplaydate.51f7b1eed602b52fc181.png",
+    "static/media/flyteChecker.png": "/static/media/flyteChecker.efcd0ba96f30831beff7.png",
+    "static/media/adventureessential.png": "/static/media/adventureessential.b9da01cba1d1e642a1b2.png",
+    "static/media/TeamProfileGenerator.png": "/static/media/TeamProfileGenerator.cfc82d135afa39a9f218.png",
+    "index.html": "/index.html",
+    "main.ba72644c.css.map": "/static/css/main.ba72644c.css.map",
+    "main.146496b0.js.map": "/static/js/main.146496b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba72644c.css",
+    "static/js/main.146496b0.js"
+  ]
+}
