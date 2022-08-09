@@ -3,7 +3,7 @@ import htmlPortfolio from "./TheLittlefieldPortfolio.png";
 //Projects
 import petPlaydate from "./petplaydate.png";
 import flyteChecker from "./flyteChecker.png";
-
+import interrobang from "./interrobang.png";
 //Challenges
 import horiseon from "./horiseon.png";
 import wordwise from "./wordwise.png";
@@ -19,6 +19,7 @@ import livelihoodkitchen from "./livelihoodkitchen.png";
 import tashan from "./tashan.png";
 
 export default {
+    interrobang,
     ProfilePhoto,
     htmlPortfolio,
     petPlaydate,

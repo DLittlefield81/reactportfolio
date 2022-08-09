@@ -7,7 +7,7 @@ import './DrawerComp.css'
 
 // Setup NavItems
 //  About is not contained in pages as it is the Default Page.
-const PAGES = [ 'Portfolio','Contact', 'Resume'];
+const PAGES = [ 'portfolio','contact', 'resume'];
 
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
