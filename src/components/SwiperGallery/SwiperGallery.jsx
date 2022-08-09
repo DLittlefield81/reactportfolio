@@ -93,7 +93,7 @@ const projects = [
         alt: "Campos Lab",
         tech: "WordPress",
         description: "Campos Lab @ SickKids performing epigenetics research",
-        repository: "",
+        repository: "#",
         deployed: "https://lab.research.sickkids.ca/campos/"
     },
     {
@@ -102,7 +102,7 @@ const projects = [
         alt: "Livelihood Kitchen",
         tech: "WordPress",
         description: "Food delivery service run by new Canadian residants ",
-        repository: "",
+        repository: "#",
         deployed: "https://livelihoodkitchen.com"
     },
     {
@@ -111,7 +111,7 @@ const projects = [
         alt: "Tashan Events",
         tech: "WordPress",
         description: "South Asian Bollywood events",
-        repository: "",
+        repository: "#",
         deployed: "https://tashanevents.ca/"
     },
 ];
