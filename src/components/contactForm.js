@@ -1,65 +1,48 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState } from "react";
+import { FormControl, Input, Box, TextField, Button } from '@mui/material';
 
- const ContactUs = () => {
-    const form = useRef();
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/b9ba7410-176a-11ed-98e8-53e0970ab51c"; // TODO - fill on the later step
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_0rj40qc', 'template_ysw6sno', form.current, 'UQA8JW6gi1p3KVYWM')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+const ContactForm = () => {
+    const [submitted, setSubmitted] = useState(false);
+    const handleSubmit = () => {
+        setTimeout(() => {
+            setSubmitted(true);
+        }, 100);
     };
 
-     return (
-         <section className="bg-light">
-             <div className="container">
-                 <div className="row">
-                     <div className="col-lg-10 mx-auto text-dark mb-4">
-                    
-                         <form id="contact-form" onSubmit={sendEmail} className="mb-5">
-                             <div>
-                                 <input
-                                     className="form-control"
-                                     placeholder="Name"
-                                     type="text"
-                                     name="user_name"
-                                 />
-                             </div>
-                             <div>
-                                 <input
-                                     className="form-control"
-                                     placeholder="Email"
-                                     type="email"
-                                     name="user_email"
-                                 />
-                             </div>
-                             <div>
-                                 <textarea
-                                     className="form-control"
-                                     placeholder="Message"
-                                     name="message"
-                                     rows="5"
-                                 />
-                             </div>
-                             <div className="text-center">
-                                 <button type="submit" className="btn btn-primary btn-xl js-scroll-trigger" value="Send">Submit</button>
-                             </div>
-                         </form>
-                         <h4>
-                             Email:  <a href="mailto:Dennis.AH.Littlefield@gmail.com"> Dennis.AH.Littlefield@gmail.com</a>
-                         </h4>
-                     </div>
-                 </div>
-             </div>
-         </section>
-     );
- }
-export default ContactUs
+    if (submitted) {
+        return (
+            <>
+                <h2>Thank you!</h2>
+                <div>We'll be in touch soon.</div>
+            </>
+        );
+    }
 
+    return (
+        <Box style={{ display: "flex", justifyContent: 'center', alignItems: 'center', mx: 'auto'}}>
+            <form 
+                action={FORM_ENDPOINT}
+                onSubmit={handleSubmit}
+                method="POST"
+                target="_blank"
+            >
+                <div style={{ mx: "auto", marginTop: `10px`, }}>
+                    <TextField fullWidth className="m-2 p-2" type="text" placeholder="Your name" name="name" variant="standard" required />
+                </div>
+                <div style={{ mx: "auto", marginTop: `10px` }}>
+                    <TextField fullWidth className="m-2 p-2" type="email" placeholder="Email" name="email" variant="standard" required />
+                </div>
+                <div style={{ mx: "auto", marginTop: `10px` }}>
+                    <TextField fullWidth className="m-2 p-2" multiline rows={4} placeholder="Your message" name="message" variant="standard" required />
+                </div>
+                <div style={{ mx: "auto", marginTop: `20px`, paddingBottom: `50px` }}>
+                    <Button fullWidth className="m-2 p-2" variant="contained" type="submit"> Send a message </Button>
+                </div>
+            </form>
+        </Box>
+    );
+};
 
-
+export default ContactForm;
