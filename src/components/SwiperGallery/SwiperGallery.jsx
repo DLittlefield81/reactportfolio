@@ -25,6 +25,15 @@ const projects = [
         deployed: "https://dlittlefield81.github.io/DennisLittlefieldPortfolio/"
     },
     {
+        title: "Interrobang Auction House",
+        image: Images.htmlPortfolio,
+        alt: "Interrobang Auction House",
+        tech: "MERN Stack: MongoDB, Express, React, Node. Featuring MaterialUI and Swiper",
+        description: "Auction house website where users may create a profile and bid on artwork that is up for auction.",
+        repository: "https://github.com/RGarrettLee/Interrobang-Auction-House",
+        deployed: "https://interrobang-auction-house.herokuapp.com/"
+    },
+    {
         title: "Pet Playdate",
         image: Images.petPlaydate,
         alt: "Pet Playdate",
