@@ -28,7 +28,7 @@ const projects = [
         title: "Interrobang Auction House",
         image: Images.interrobang,
         alt: "Interrobang Auction House",
-        tech: "MERN Stack: MongoDB, Express, React, Node. Featuring MaterialUI and Swiper",
+        tech: "MongoDB, Express, React, Node.",
         description: "Auction house website where users may create a profile and bid on artwork that is up for auction.",
         repository: "https://github.com/RGarrettLee/Interrobang-Auction-House",
         deployed: "https://interrobang-auction-house.herokuapp.com/"
