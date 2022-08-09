@@ -33,7 +33,7 @@ const DrawerComp = () => {
                   background: isActive ? '#8FE3CF' : '#002B5B',
                 })}
                 >
-                 About</NavLink>
+                 about</NavLink>
               </ListItemText>
             </ListItemIcon>
           </ListItemButton>
