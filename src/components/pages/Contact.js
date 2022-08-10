@@ -9,6 +9,7 @@ const Contact = () => {
       </Typography>
       <hr />
       <ContactForm />
+      
       </Box>
   );
 }

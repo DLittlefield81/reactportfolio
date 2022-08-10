@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FormControl, Input, Box, TextField, Button } from '@mui/material';
+import { FormControl, Input, Box, TextField, Button, Typography } from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/b9ba7410-176a-11ed-98e8-53e0970ab51c"; // TODO - fill on the later step
 
@@ -40,7 +41,16 @@ const ContactForm = () => {
                 <div style={{ mx: "auto", marginTop: `20px`, paddingBottom: `50px` }}>
                     <Button fullWidth className="m-2 p-2" variant="contained" type="submit"> Send a message </Button>
                 </div>
+                <div style={{ textDecoration: 'none', mx: "auto", paddingBottom: `50px`, textAlign: 'center' }}>
+                    <Typography fontFamily="Josefin Sans">Send me an email directly <br />
+                    <a style={{ textDecoration: 'none', mx: "auto", marginTop: `20px`, paddingBottom: `50px` }} href="mailto:Littlefield.Dennis@Outlook.com">
+                        <Button fullWidth className="m-2 p-2" variant="contained">
+                            <SendIcon />&nbsp;  Littlefield.Dennis@Outlook.com
+                        </Button>
+                    </a></Typography>
+                </div>
             </form>
+            
         </Box>
     );
 };

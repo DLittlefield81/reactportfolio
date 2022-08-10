@@ -10,7 +10,7 @@ const Header = () => {
                 <Toolbar>
                     <DrawerComp />
                     <Link underline="none" href="/reactportfolio/">
-                        <Typography color="secondary" fontFamily="Josefin Sans" variant="h1" sx={{ fontSize: '28px' }}> Dennis Littlefield</Typography>
+                        <Typography color="secondary" fontFamily="Josefin Sans" variant="h1" sx={{ fontSize: '35px' }}> Dennis Littlefield</Typography>
                     </Link>
                 </Toolbar>
 
