@@ -15,23 +15,23 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-    <Router>
- 
-      <div>
-        <Header />
-        <Routes>
-            <Route exact path='/reactportfolio/' element={<About />} ></Route>
-         <Route path='/portfolio' element={<Portfolio />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
-            <Route path='/resume' element={<Resume />}></Route>
-            <Route path='*' element={<Resume />}></Route>
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-</ThemeProvider>
+      <Router>
 
-    
+        <div>
+          <Header />
+          <Routes>
+            <Route exact path='/' element={<About />} />
+            <Route path='/portfolio/' element={<Portfolio />} />
+            <Route path='/contact/' element={<Contact />} />
+            <Route path='/resume/' element={<Resume />} />
+            <Route path='*' element={<Resume />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
+
+
   )
 }
 
