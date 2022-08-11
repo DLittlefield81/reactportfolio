@@ -29,7 +29,7 @@ class Resume extends Component {
               <Tooltip title="Download My Resume">
             <Link href={dlLink} target="_blank" style={{mx:'auto', textDecoration: 'none' }} download>
           <Button style={{  justifyContent: 'center', alignItems: 'center'}}variant="contained" color="primary" fontsize="24">
-                <LocalPrintshopIcon color="secondary" />  Download or Print My Resume
+                <LocalPrintshopIcon/>&nbsp;  Download or Print My Resume
           </Button></Link>
           </Tooltip>
             </div>

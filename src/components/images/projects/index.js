@@ -1,5 +1,7 @@
 import ProfilePhoto from "./ProfilePhoto.jpg";
 import htmlPortfolio from "./TheLittlefieldPortfolio.png";
+import reactPortfolio from "./dennislittlefield-portfolio.png";
+
 //Projects
 import petPlaydate from "./petplaydate.png";
 import flyteChecker from "./flyteChecker.png";
@@ -21,6 +23,7 @@ import tashan from "./tashan.png";
 export default {
     interrobang,
     ProfilePhoto,
+    reactPortfolio,
     htmlPortfolio,
     petPlaydate,
     flyteChecker,

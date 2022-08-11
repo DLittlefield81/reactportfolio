@@ -14,55 +14,58 @@ import CoPresentIcon from '@mui/icons-material/CoPresent';
 import PreviewIcon from '@mui/icons-material/Preview';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+
 function Project(props) {
+  const hasRepo = props.hasRepo
+return (
+  <Card sx={{ maxWidth: 345, minWidth: 345, margin: 2 }}>
+    <CardHeader
+      avatar={
+        <Avatar sx={{ bgcolor: "#002B5B" }} aria-label="Team Size">
+          <Tooltip title={props.size}>{props.group}</Tooltip>
+        </Avatar>
+      }
 
+      title={props.title}
+      subheader={props.tech}
+    />
+    <CardMedia
+      component="img"
+      height="194"
+      image={props.image}
+      alt={props.alt}
+    />
+    <CardContent>
+      <Typography variant="body2" color="text.secondary">
+        {props.description}
+      </Typography>
+    </CardContent>
+    <CardActions disableSpacing>
+      {/* Conditional Action */}
 
-  return (
-    <Card  sx={{ maxWidth: 345, minWidth: 345, margin: 2 }}>
-      <CardHeader
-        avatar={
-          <Avatar  sx={{ bgcolor: "#002B5B" }} aria-label="recipe">
-           <CoPresentIcon/>
-          </Avatar>
-        }
-        
-        title={props.title}
-        subheader={props.tech}
-      />
-      <CardMedia
-        component="img"
-        height="194"
-        image={props.image}
-        alt={props.alt}
-      />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          {props.description}
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-       <Tooltip title="View Repository on GitHub">
+      <Tooltip title="View Repository on GitHub">
         <IconButton aria-label="GitHub">
-            <Link color="primary" underline="none" href={props.repository} rel="noreferrer" target="_blank" className="btn btn-primary">
-              <Typography>
-                <GitHubIcon fontSize="large" />
+          <Link color="primary" underline="none" href={props.repository} rel="noreferrer" target="_blank" className="btn btn-primary">
+            <Typography>
+              <GitHubIcon fontSize="large" />
             </Typography>
           </Link>
-      </IconButton>
+        </IconButton>
       </Tooltip>
-    <Tooltip title="View Deployed Site">
+      {/* Conditional Action */}
+      <Tooltip title="View Deployed Site">
         <IconButton aria-label="View Deployed Site">
-          <Link color="primary" underline="none"  href={props.deployed} rel="noreferrer" target="_blank" className="btn btn-primary">
+          <Link color="primary" underline="none" href={props.deployed} rel="noreferrer" target="_blank" className="btn btn-primary">
             <Typography>
               <PreviewIcon fontSize="large" />
             </Typography>
           </Link>
         </IconButton>
-        </Tooltip>
-        </CardActions>
-    </Card>
+      </Tooltip>
+    </CardActions>
+  </Card>
 
-  );
+);
 }
 
 export default Project;

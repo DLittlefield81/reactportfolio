@@ -10,21 +10,27 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./SwiperGallery.css";
 
+import Team from '@mui/icons-material/Groups';
+import Solo from '@mui/icons-material/Person';
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 
 const projects = [
     {
-        title: "The Littlefield Portfolio",
-        image: Images.htmlPortfolio,
-        alt: "The Littlefield Portfolio",
-        tech: "HTML, CSS",
+        group: Solo,
+        size: 'Individual Project',
+        title: "Dennis Littlefield Portfolio",
+        image: Images.reactPortfolio,
+        alt: "Dennis Littlefield Portfolio",
+        tech: "ReactJS, MaterialUI, Swiper, muiTheme",
         description: "Profile website to showcase developed projects",
-        repository: "https://github.com/DLittlefield81/DennisLittlefieldPortfolio",
-        deployed: "https://dlittlefield81.github.io/DennisLittlefieldPortfolio/"
+        repository: "https://github.com/DLittlefield81/reactportfolio",
+        deployed: "https://dlittlefield81.github.io/reactportfolio/"
     },
     {
+        group: Team,
+        size: 'Team of Three',
         title: "Interrobang Auction House",
         image: Images.interrobang,
         alt: "Interrobang Auction House",
@@ -34,6 +40,8 @@ const projects = [
         deployed: "https://interrobang-auction-house.herokuapp.com/"
     },
     {
+        group: Team,
+        size: 'Team of Three',
         title: "Pet Playdate",
         image: Images.petPlaydate,
         alt: "Pet Playdate",
@@ -43,6 +51,8 @@ const projects = [
         deployed: "https://pet-play-date.herokuapp.com/"
     },
     {
+        group: Team,
+        size: 'Team of Two',
         title: "FlyteChecker",
         image: Images.flyteChecker,
         alt: "HTML CSS JavaScript AmadeusAPI",
@@ -52,6 +62,19 @@ const projects = [
         deployed: "https://dlittlefield81.github.io/FlytCheckr/"
     },
     {
+        group: Solo,
+        size: 'Individual Project',
+        title: "The Littlefield Portfolio",
+        image: Images.htmlPortfolio,
+        alt: "The Littlefield Portfolio",
+        tech: "HTML, CSS",
+        description: "Profile website to showcase developed projects",
+        repository: "https://github.com/DLittlefield81/DennisLittlefieldPortfolio",
+        deployed: "https://dlittlefield81.github.io/DennisLittlefieldPortfolio/"
+    },
+    {
+        group: Solo,
+        size: 'Individual Project',
         title: "Horiseon",
         image: Images.horiseon,
         alt: "Horiseon",
@@ -61,6 +84,8 @@ const projects = [
         deployed: "https://dlittlefield81.github.io/horiseon-web/"
     },
     {
+        group: Solo,
+        size: 'Individual Project',
         title: "Wordwise",
         image: Images.wordwise,
         alt: "Wordwise",
@@ -70,6 +95,8 @@ const projects = [
         deployed: "https://dlittlefield81.github.io/WordWise/"
     },
     {
+        group: Solo,
+        size: 'Individual Project',
         title: "Text Editor",
         image: Images.jate,
         alt: "Text Editor",
@@ -79,6 +106,8 @@ const projects = [
         deployed: "https://mighty-retreat-28358.herokuapp.com/"
     },
     {
+        group: Solo,
+        size: 'Individual Project',
         title: "Tech Blog",
         image: Images.techBlog,
         alt: "Tech Blog",
@@ -88,6 +117,8 @@ const projects = [
         deployed: "https://blooming-brushlands-35431.herokuapp.com/"
     },
     {
+        group: Solo,
+        size: 'Individual Project',
         title: "Campos Lab",
         image: Images.camposlab,
         alt: "Campos Lab",
@@ -97,6 +128,8 @@ const projects = [
         deployed: "https://lab.research.sickkids.ca/campos/"
     },
     {
+        group: Solo,
+        size: 'Individual Project',
         title: "Livelihood Kitchen",
         image: Images.livelihoodkitchen,
         alt: "Livelihood Kitchen",
@@ -106,6 +139,8 @@ const projects = [
         deployed: "https://livelihoodkitchen.com"
     },
     {
+        group: Solo,
+        size: 'Individual Project',
         title: "Tashan Events",
         image: Images.tashan,
         alt: "Tashan Events",
@@ -139,7 +174,7 @@ export default function SwiperGallery() {
             >
                 {projects.map((project) =>
                 <SwiperSlide>
-                        <Project title={project.title} image={project.image} alt={project.alt} tech={project.tech} description={project.description} repository={project.repository} deployed={project.deployed} />
+                        <Project group={<project.group />} size={project.size } title={project.title} image={project.image} alt={project.alt} tech={project.tech} description={project.description} repository={project.repository} deployed={project.deployed} />
                 </SwiperSlide>
                 )}
             </Swiper>
