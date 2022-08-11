@@ -20,7 +20,7 @@ function App() {
         <div>
           <Header />
           <Routes>
-            <Route exact path='/' element={<About />} />
+            <Route strict exact path='/' element={<About />} />
             <Route path='/portfolio/' element={<Portfolio />} />
             <Route path='/contact/' element={<Contact />} />
             <Route path='/resume/' element={<Resume />} />
