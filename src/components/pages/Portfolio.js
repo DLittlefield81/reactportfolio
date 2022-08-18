@@ -1,6 +1,7 @@
 import React from 'react'
-import SwiperGallery  from '../SwiperGallery'
-import Typography from '@mui/material/Typography';
+import {SwiperGallery} from '../elements'
+import {Typography} from '@mui/material';
+
 const Portfolio = () => {
     return (
         <div style={{ mx: "auto", marginTop: `80px` }}>

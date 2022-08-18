@@ -1,0 +1,60 @@
+:root {
+    /* Game Styling */
+    --color-Header: #F9ECCC !important;
+    --color-Body: #B5DDA4 !important;
+    --color-menuBar: #4DAA57 !important;
+    --color-Button: #587D71 !important;
+    --color-Footer: #754668 !important;
+    --color-shadow: hsl(0, 0%, 50%);
+
+}
+
+#app {
+    height: 100%
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 600px;
+    
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top;
+}
+
+.box {
+    width: 350px;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: rgba(0, 57, 88, 0.8);
+    border-radius: 20px;
+}

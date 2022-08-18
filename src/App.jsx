@@ -1,7 +1,7 @@
 import React from 'react';
-import "./components/styles/App.css"
+import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header, Footer } from './components/common';
+import { Header, Footer } from './components/elements';
 import About from './components/pages/About';
 import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
@@ -24,7 +24,7 @@ function App() {
             <Route path='/portfolio/' element={<Portfolio />} />
             <Route path='/contact/' element={<Contact />} />
             <Route path='/resume/' element={<Resume />} />
-            <Route path='*' element={<Resume />} />
+            <Route path='*' element={<About />} />
           </Routes>
           <Footer />
         </div>

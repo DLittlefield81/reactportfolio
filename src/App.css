@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Edu+VIC+WA+NT+Beginner&display=swap');
+* {
+}
+body {
+    background-color: #A6D1E6;
+    font-family: 'Edu VIC WA NT Beginner', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.css-mkazzp-MuiButtonBase-root-MuiButton-root{
+    font-family:'Edu VIC WA NT Beginner',
+        Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+background-color: #A6D1E6 !important;
+
+}

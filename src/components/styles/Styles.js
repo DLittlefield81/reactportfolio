@@ -59,10 +59,8 @@ const theme = createTheme({
         },
         Typography: {
             fontFamily: [
-                'Josefin Sans',
-                'Oleo Script Swash Caps',
-                'cursive',
-                'sans-serif'
+                'Montserrat Alternates',
+                'Roboto',
             ].join(','),
 
         },
