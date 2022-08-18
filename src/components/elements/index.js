@@ -7,6 +7,7 @@ import ImageAvatars from './ImageAvatars';
 import Projects from './Projects';
 import SwiperGallery from './SwiperGallery';
 import SwiperParalax from './SwiperParalax';
+import MyResume from './MyResume';
 
 export {
     Card,
@@ -18,6 +19,7 @@ export {
     Projects,
     SwiperGallery,
     SwiperParalax,
+    MyResume,
 
 
 }

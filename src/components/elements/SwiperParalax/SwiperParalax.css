@@ -54,7 +54,21 @@ body {
 .box {
     width: 350px;
     margin-left: 5%;
+    margin-bottom: 5%;
     padding: 20px;
     background-color: rgba(0, 57, 88, 0.8);
     border-radius: 20px;
+}
+@media only screen and (max-width:480px) {
+    .box {
+            width: 100%;
+            padding:10px;
+            background-color: rgba(0, 57, 88, 0.8);
+            border-radius: 20px;
+        }
+                .swiper {
+                    width: 100%;
+                    height: 700px;
+        
+                }
 }
