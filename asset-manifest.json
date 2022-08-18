@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactportfolio/static/css/main.c91be1be.css",
-    "main.js": "/reactportfolio/static/js/main.c0d5b4fa.js",
+    "main.css": "/reactportfolio/static/css/main.b1675934.css",
+    "main.js": "/reactportfolio/static/js/main.2c254b7c.js",
     "static/media/dennis5.jpg": "/reactportfolio/static/media/dennis5.98013cf2dc759cdfa3e5.jpg",
     "static/media/dennis.jpg": "/reactportfolio/static/media/dennis.58df6317bff859b33e76.jpg",
     "static/media/interrobang.png": "/reactportfolio/static/media/interrobang.d680d493f26a253937ff.png",
@@ -17,11 +17,11 @@
     "static/media/adventureessential.png": "/reactportfolio/static/media/adventureessential.b9da01cba1d1e642a1b2.png",
     "static/media/TeamProfileGenerator.png": "/reactportfolio/static/media/TeamProfileGenerator.cfc82d135afa39a9f218.png",
     "index.html": "/reactportfolio/index.html",
-    "main.c91be1be.css.map": "/reactportfolio/static/css/main.c91be1be.css.map",
-    "main.c0d5b4fa.js.map": "/reactportfolio/static/js/main.c0d5b4fa.js.map"
+    "main.b1675934.css.map": "/reactportfolio/static/css/main.b1675934.css.map",
+    "main.2c254b7c.js.map": "/reactportfolio/static/js/main.2c254b7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.c91be1be.css",
-    "static/js/main.c0d5b4fa.js"
+    "static/css/main.b1675934.css",
+    "static/js/main.2c254b7c.js"
   ]
 }
