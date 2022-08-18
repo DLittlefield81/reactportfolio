@@ -20,7 +20,7 @@ const DrawerComp = () => {
             <ListItemIcon>
               <ListItemText>
                 <NavLink to="/reactportfolio/" style={({ isActive }) => ({
-                  fontFamily: 'Helvetica',
+                  fontFamily: 'Montserrat Alternates',
                   fontSize: '20px',
                   textDecoration: 'none',
                   justifyContent: 'center',
@@ -44,7 +44,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemText>
                     <NavLink to={page} style={({ isActive }) => ({
-                      fontFamily: 'Josefin Sans',
+                      fontFamily: 'Montserrat Alternates',
                       fontSize: '20px',
                       textDecoration: 'none',
                       justifyContent: 'center',

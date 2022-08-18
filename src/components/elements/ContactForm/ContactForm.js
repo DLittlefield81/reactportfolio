@@ -42,7 +42,7 @@ const ContactForm = () => {
                     <Button fullWidth className="m-2 p-2" variant="contained" type="submit"> Send a message </Button>
                 </div>
                 <div style={{ textDecoration: 'none', mx: "auto", paddingBottom: `50px`, textAlign: 'center' }}>
-                    <Typography fontFamily="Josefin Sans">Send me an email directly <br />
+                    <Typography fontFamily="Montserrat Alternates">Send me an email directly <br />
                     <a style={{ textDecoration: 'none', mx: "auto", marginTop: `20px`, paddingBottom: `50px` }} href="mailto:Littlefield.Dennis@Outlook.com">
                         <Button fullWidth className="m-2 p-2" variant="contained">
                             <SendIcon />&nbsp;  Littlefield.Dennis@Outlook.com

@@ -16,7 +16,7 @@ class Resume extends Component {
 
     return (
       <Box style={{ mx: "auto", marginTop: `80px` }}>
-        <Typography fontFamily="Josefin Sans" variant="h2" color="primary">
+        <Typography fontFamily="Montserrat Alternates" variant="h2" color="primary">
           Resume
         </Typography>
         <hr />
