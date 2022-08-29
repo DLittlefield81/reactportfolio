@@ -27,16 +27,6 @@ const aboutDetails =
       subtitle: "Passion for Tech",
       text: `Throughout my life I have loved technology, from my early childhood I would take apart my toys to see how they worked. At the age of 7, I began coding on a VIC20, and by the age of 14 I had purchased my own computer and began reading web page source code to teach myself HTML. Over time I learned Flash Animation, ActionScript, ColdFusion, PHP, and WordPress.`,
     },
-    {
-      title: "About Me",
-      subtitle: 'Hobbies & Interests',
-      text: "I love finding new hobbies. Hobbies are how I continue to learn. Over the years I've learned many skills, such as wiringing my condo with CAT5, Home Automation, Computerized Embroidery, 3D printing, Costume making, drone piloting, and photography.",
-    },
-    {
-      title: "About Me",
-      subtitle: 'Family & Friends',
-      text: "My family and friends are important to me, I value their creativity and insight, although none can beat my dog Topaz. Every day Topaz and I go to the park to play with her other furry friends, she shares her toys, and can hold her own when play gets rough. You always know Topaz is happy as she litterally skips down the sidewalk while out for our walks.",
-    },
 ]
 
 
