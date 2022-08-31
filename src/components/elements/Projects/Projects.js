@@ -20,7 +20,7 @@ return (
   <Card sx={{ maxWidth: 345, minWidth: 345, margin: 2 }}>
     <CardHeader
       avatar={
-        <Avatar sx={{ bgcolor: "#002B5B" }} aria-label="Team Size">
+        <Avatar sx={{ bgcolor: `${props.colour}` }} aria-label="Team Size">
           <Tooltip title={props.size}>{props.group}</Tooltip>
         </Avatar>
       }
@@ -35,6 +35,9 @@ return (
       alt={props.alt}
     />
     <CardContent>
+      <Typography variant="body2" color="text.secondary">
+        Role: {props.role}
+      </Typography>
       <Typography variant="body2" color="text.secondary">
         {props.description}
       </Typography>

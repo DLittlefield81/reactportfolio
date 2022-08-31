@@ -9,7 +9,7 @@ const Portfolio = () => {
                 Portfolio
             </Typography>
             <hr />
-            <SwiperGallery sx={{}} />
+            <SwiperGallery />
         </div>
     )
 }
