@@ -25,7 +25,7 @@ const aboutDetails =
     {
       title: "About Me",
       subtitle: "Passion for Tech",
-      text: `Throughout my life I have loved technology, from my early childhood I would take apart my toys to see how they worked. At the age of 7, I began coding on a VIC20, and by the age of 14 I had purchased my own computer and began reading web page source code to teach myself HTML. Over time I learned Flash Animation, ActionScript, ColdFusion, PHP, and WordPress.`,
+      text: `Throughout my life I have loved technology, At the age of 7, I began coding on a VIC20, and by the age of 14 I had purchased my own computer and began reading web page source code to teach myself HTML. Over time I learned Flash Animation, ActionScript, ColdFusion, PHP, and WordPress.`,
     },
 ]
 
