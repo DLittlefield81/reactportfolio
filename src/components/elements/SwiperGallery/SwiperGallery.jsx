@@ -134,6 +134,10 @@ const projects = [
         repository: "https://github.com/DLittlefield81/TechBlog",
         deployed: "https://blooming-brushlands-35431.herokuapp.com/"
     },
+];
+// wordpress
+const wordpress = [
+    
     {
         group: Solo,
         colour: "#002B5B",
@@ -175,11 +179,10 @@ const projects = [
     },
 ];
 
-
 export default function SwiperGallery() {
 
     return (
-        <>
+        <div>
             <Swiper 
                 effect={"coverflow"}
                 grabCursor={true}
@@ -201,7 +204,31 @@ export default function SwiperGallery() {
                         <Project group={<project.group />} colour={project.colour} size={project.size} title={project.title} image={project.image} alt={project.alt} tech={project.tech} role={project.role}  description={project.description} repository={project.repository} deployed={project.deployed} />
                 </SwiperSlide>
                 )}
+                
             </Swiper>
-        </>
+            <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: false,
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination]}
+                className="mySwiper"
+            >
+                {wordpress.map((wordpress) =>
+                    <SwiperSlide>
+                        <Project group={<wordpress.group />} colour={wordpress.colour} size={wordpress.size} title={wordpress.title} image={wordpress.image} alt={wordpress.alt} tech={wordpress.tech} role={wordpress.role} description={wordpress.description} repository={wordpress.repository} deployed={wordpress.deployed} />
+                    </SwiperSlide>
+                )}
+
+            </Swiper>
+        </div>
     );
 }
