@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../Projects";
 import Images from '../../images/projects/';
+import { Typography } from '@mui/material';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -183,6 +184,7 @@ export default function SwiperGallery() {
 
     return (
         <div>
+            <Typography fontFamily="Montserrat Alternates" variant="h4" color="primary">Full Stack Projects</Typography>
             <Swiper 
                 effect={"coverflow"}
                 grabCursor={true}
@@ -206,6 +208,7 @@ export default function SwiperGallery() {
                 )}
                 
             </Swiper>
+            <Typography fontFamily="Montserrat Alternates" variant="h4" color="primary">WordPress Projects</Typography>
             <Swiper
                 effect={"coverflow"}
                 grabCursor={true}
