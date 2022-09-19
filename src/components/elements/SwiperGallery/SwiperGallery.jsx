@@ -52,7 +52,7 @@ const projects = [
         image: Images.petPlaydate,
         alt: "Pet Playdate",
         tech: "ExpressJS, Handlebars, SQL",
-        role: "Developed: Front End",
+        role: "Developed Front End",
         description: "Schedule a playdate for your pet",
         repository: "https://github.com/DLittlefield81/pet-playdate",
         deployed: "https://pet-play-date.herokuapp.com/"
@@ -65,7 +65,7 @@ const projects = [
         image: Images.flyteChecker,
         alt: "HTML CSS JavaScript AmadeusAPI",
         tech: "RestAPI, JavaScript, HTML, CSS",
-        role: "Developed: JavaScript with API Calls",
+        role: "Developed JavaScript with API Calls",
         description: "View flight information between chosen cities",
         repository: "https://github.com/DLittlefield81/FlytCheckr",
         deployed: "https://dlittlefield81.github.io/FlytCheckr/"
@@ -177,6 +177,19 @@ const wordpress = [
         description: "South Asian Bollywood events",
         repository: "#",
         deployed: "https://tashanevents.ca/"
+    },
+    {
+        group: Solo,
+        colour: "#002B5B",
+        size: 'Individual Project',
+        title: "Adventure Essentials",
+        image: Images.adventureessential,
+        alt: "Adventure Essentials",
+        tech: "WordPress",
+        role: "Sole Developer",
+        description: "Outdoor outfitter e-commerce store",
+        repository: "#",
+        deployed: "https://adventureessentials.ca/"
     },
 ];
 
