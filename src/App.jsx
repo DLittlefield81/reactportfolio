@@ -15,7 +15,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <Router>
+      <Router basename='/reactportfolio'>
 
         <div>
           <Header />
