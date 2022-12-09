@@ -1,4 +1,4 @@
-import Card from './Card';
+
 import ContactForm from './ContactForm';
 import DrawerComp from './DrawerComp';
 import Footer from './Footer';
@@ -10,7 +10,6 @@ import SwiperParalax from './SwiperParalax';
 import MyResume from './MyResume';
 
 export {
-    Card,
     ContactForm,
     DrawerComp,
     Footer,

@@ -29,14 +29,14 @@ const Stack = () => {
         <img src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg" title="Material UI" alt="Material UI" width="75" height="75" />&nbsp;
         <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/webpack_plain_logo_icon_146297.png" title="Webpack" alt="Webpack" width="75" height="75" />&nbsp;<br />
         
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" title="WordPress" alt="WordPress" width="75" height="75" />&nbsp;
-        <img src="https://www.briansniff.com/wp-files/uploads/2016/05/divi-logo-sq.png" title="DIVI" alt="DIVI" width="75" height="75" />&nbsp;
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/WooCommerce_logo.svg" title="WooCommerce" alt="WooCommerce" width="75" height="75" />&nbsp;<br />
-        
         <img src="https://www.loggly.com/wp-content/uploads/2017/02/setup-mysql-1-220x220.png" title="MySQL" alt="MySQL" width="75" height="75" />&nbsp;
         <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" title="Sequelize" alt="Sequelize" width="75" height="75" />&nbsp;
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Antu_mongodb.svg/512px-Antu_mongodb.svg.png" title="MongoDB" alt="MongoDB" width="75" height="75" />&nbsp;
         <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" title="GraphQL" alt="GraphQL" width="75" height="75" />&nbsp;<br/>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" title="WordPress" alt="WordPress" width="75" height="75" />&nbsp;
+        <img src="https://www.briansniff.com/wp-files/uploads/2016/05/divi-logo-sq.png" title="DIVI" alt="DIVI" width="75" height="75" />&nbsp;
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/WooCommerce_logo.svg" title="WooCommerce" alt="WooCommerce" width="75" height="75" />&nbsp;<br />
         
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" title="VS Code" alt="VS Code" width="75" height="75" />&nbsp;
         <img src="https://git-scm.com/images/logos/logomark-black@2x.png" title="Git" alt="Git" width="75" height="75" />&nbsp;

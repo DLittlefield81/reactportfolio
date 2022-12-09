@@ -1,10 +1,11 @@
 import { createTheme } from '@mui/material';
 
 const Colors = {
-    // PRIMARY COLORS
+    // PRIMARY Buttons
     primary_main: '#2B4865',
     primary_light: '#9be7ff',
     primary_dark: '#2286c3',
+    // Secondary Buttons
     secondary_main: '#8FE3CF',
     secondary_light: '#7c43bd',
     secondary_dark: '#12005e',
@@ -17,8 +18,8 @@ const Colors = {
     border: '',
     inverse: '',
     shaft: '',
-    dove_gray: '#888888',
-    body_bg: '#efebe9',
+    paper: '#c9c7c7',
+    body_bg: '#b2b1b1',
     // SOLID COLORS
     white: '#fff',
     black: '#000',
@@ -28,6 +29,8 @@ const theme = createTheme({
     palette: {
         background: {
             default: Colors.body_bg,
+            paper:  Colors.paper,
+
         },
         primary: {
             light: Colors.primary_light,

@@ -18,7 +18,8 @@ function Projects(props) {
   const hasRepo = props.hasRepo
 return (
   <Card sx={{ maxWidth: 345, minWidth: 345, margin: 2 }}>
-    <CardHeader
+    
+      <CardHeader
       avatar={
         <Avatar sx={{ bgcolor: `${props.colour}` }} aria-label="Team Size">
           <Tooltip title={props.size}>{props.group}</Tooltip>
@@ -35,10 +36,10 @@ return (
       alt={props.alt}
     />
     <CardContent>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body" color="text.secondary">
         Role: {props.role}
-      </Typography>
-      <Typography variant="body2" color="text.secondary">
+      </Typography><br/>
+      <Typography variant="body" color="text.secondary">
         {props.description}
       </Typography>
     </CardContent>

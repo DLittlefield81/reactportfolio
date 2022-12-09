@@ -138,7 +138,19 @@ const projects = [
 ];
 // wordpress
 const wordpress = [
-    
+    {
+        group: Solo,
+        colour: "#002B5B",
+        size: 'WordPress Portfolio',
+        title: "Offworld.ca",
+        image: Images.offworld,
+        alt: "Dennis Littlefield Portfolio",
+        tech: "WordPress",
+        role: "Sole Developer",
+        description: "Personal portfolio built using WordPress, and Divi.",
+        repository: "#",
+        deployed: "https://offworld.ca"
+    },
     {
         group: Solo,
         colour: "#002B5B",

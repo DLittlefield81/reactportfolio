@@ -1,6 +1,7 @@
 import ProfilePhoto from "./ProfilePhoto.jpg";
 import htmlPortfolio from "./TheLittlefieldPortfolio.png";
 import reactPortfolio from "./dennislittlefield-portfolio.png";
+import offworld from "./offworld.png";
 
 //Projects
 import petPlaydate from "./petplaydate.png";
@@ -21,6 +22,7 @@ import livelihoodkitchen from "./livelihoodkitchen.png";
 import tashan from "./tashan.png";
 
 export default {
+    offworld,
     interrobang,
     ProfilePhoto,
     reactPortfolio,
