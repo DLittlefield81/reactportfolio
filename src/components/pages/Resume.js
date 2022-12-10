@@ -6,8 +6,8 @@ import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 class Resume extends Component {
   
   render() {
-    let iframeSrc = "https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub?embedded=true";
-    let dlLink = "https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub"
+    let iframeSrc = "https://docs.google.com/document/d/e/2PACX-1vRwcjKMBpPN17E0zanDS7woSD7TvHxRQ6VZ4ds0ccAH2mU8g4gPWjvHYTXIcu-ITisQNFixJy3voRfN/pub?embedded=true";
+    let dlLink = "https://docs.google.com/document/d/e/2PACX-1vRwcjKMBpPN17E0zanDS7woSD7TvHxRQ6VZ4ds0ccAH2mU8g4gPWjvHYTXIcu-ITisQNFixJy3voRfN/pub"
     let style = {
       
       height: '100vh',
