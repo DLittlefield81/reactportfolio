@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
+import './Resume.css'
 import { Button, Box, Tooltip, Link, Typography, Paper } from '@mui/material'
 import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 
-
 class Resume extends Component {
-
+  
   render() {
     let iframeSrc = "https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub?embedded=true";
     let dlLink = "https://docs.google.com/document/d/e/2PACX-1vRD89-io78dIPBockkIdR77lWkIG2xqft4kmXc4oBpc_CuHmx8vr_gC3ACwkY6Ppw/pub"
     let style = {
-
-      height: '1100px',
+      
+      height: '100vh',
       border: 'none'
     };
-
+    
+    
     return (
       <Box style={{ mx: "auto", marginTop: `80px` }}>
         <Typography fontFamily="Montserrat Alternates" variant="h2" color="primary">
@@ -21,10 +22,10 @@ class Resume extends Component {
         </Typography>
         <hr />
         <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
-          <div className='col ' style={{ width: '90%' }} >
+          <div id='Resume__block' className='col ' >
             <div className='row '>
               <Paper elevation={3}>
-                <iframe width="100%" title="Dennis Littlefield Resume" src={iframeSrc}
+                <iframe id='Resume__frame' title="Dennis Littlefield Resume" src={iframeSrc}
                   style={style}>
                 </iframe>
               </Paper>
