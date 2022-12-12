@@ -6,6 +6,7 @@ import {About, Portfolio,Stack,Contact,Resume} from './components/pages';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import theme from './components/styles/Styles';
+import TawkApp from './components/elements/TawkApp/TawkApp';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route path='/resume/' element={<Resume />} />
             <Route path='*' element={<About />} />
           </Routes>
+          <TawkApp />
+          
           <Footer />
         </div>
       </Router>

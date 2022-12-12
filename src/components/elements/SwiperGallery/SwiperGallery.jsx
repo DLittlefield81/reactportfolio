@@ -209,7 +209,7 @@ export default function SwiperGallery() {
 
     return (
         <div>
-            <Typography fontFamily="Montserrat Alternates" variant="h4" color="primary">Full Stack Projects</Typography>
+            <Typography fontFamily="Montserrat Alternates" variant="h4" color="primary">Developed Projects</Typography>
             <Swiper 
                 effect={"coverflow"}
                 grabCursor={true}
