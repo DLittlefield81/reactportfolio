@@ -72,4 +72,3 @@ return (
 }
 
 export default Projects;
-
