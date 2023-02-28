@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactportfolio/static/css/main.6bcb5bc8.css",
-    "main.js": "/reactportfolio/static/js/main.c8d8137c.js",
+    "main.js": "/reactportfolio/static/js/main.db87a059.js",
     "static/media/dennis5.jpg": "/reactportfolio/static/media/dennis5.98013cf2dc759cdfa3e5.jpg",
     "static/media/dennis.jpg": "/reactportfolio/static/media/dennis.58df6317bff859b33e76.jpg",
     "static/media/dennislittlefield-portfolio.png": "/reactportfolio/static/media/dennislittlefield-portfolio.748c1439dad20d91aebc.png",
@@ -9,6 +9,7 @@
     "static/media/interrobang.png": "/reactportfolio/static/media/interrobang.d680d493f26a253937ff.png",
     "static/media/ProfilePhoto.jpg": "/reactportfolio/static/media/ProfilePhoto.cf4450d409b976aa49a7.jpg",
     "static/media/TheLittlefieldPortfolio.png": "/reactportfolio/static/media/TheLittlefieldPortfolio.92abe4c54bbf6c55cad0.png",
+    "static/media/taquerialaunion.png": "/reactportfolio/static/media/taquerialaunion.5edfe8d633839014bacd.png",
     "static/media/tashan.png": "/reactportfolio/static/media/tashan.c9342d5e12f362feb475.png",
     "static/media/livelihoodkitchen.png": "/reactportfolio/static/media/livelihoodkitchen.2f9130ed9b4bf77a7337.png",
     "static/media/horiseon.png": "/reactportfolio/static/media/horiseon.f1c41e05696dfc377032.png",
@@ -19,10 +20,10 @@
     "static/media/TeamProfileGenerator.png": "/reactportfolio/static/media/TeamProfileGenerator.cfc82d135afa39a9f218.png",
     "index.html": "/reactportfolio/index.html",
     "main.6bcb5bc8.css.map": "/reactportfolio/static/css/main.6bcb5bc8.css.map",
-    "main.c8d8137c.js.map": "/reactportfolio/static/js/main.c8d8137c.js.map"
+    "main.db87a059.js.map": "/reactportfolio/static/js/main.db87a059.js.map"
   },
   "entrypoints": [
     "static/css/main.6bcb5bc8.css",
-    "static/js/main.c8d8137c.js"
+    "static/js/main.db87a059.js"
   ]
 }
