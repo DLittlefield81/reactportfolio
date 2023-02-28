@@ -19,8 +19,8 @@ const aboutDetails =
   [
   {
     title: "About Me",
-    subtitle: 'My Experience',
-    text: "I am a Full Stack Developer graduate from the University of Toronto, leveraging over 20 years of customer service, problem-solving, and a critical thinking background. Newly developed skills in JavaScript, MongoDB, ExpressJS, NodeJS, and ReactJS. Experienced in optimizing productivity, efficiency and service quality across various environments.",
+      subtitle: 'MERN Full Stack Developer graduate from the University of Toronto.',
+      text: `I'm an experienced problem-solver with an eye for process improvement and an unwavering dedication to optimizing productivity and efficiency. I'm passionate about technology and continuously work to stay at the forefront of new and emerging trends.`,
     },
     {
       title: "About Me",

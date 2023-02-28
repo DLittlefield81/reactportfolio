@@ -16,12 +16,14 @@ import TeamProfileGenerator from "./TeamProfileGenerator.png";
 import smartPlanner from "./smartplanner.png";
 
 //Wordpress Sites
+import taquerialaunion from "./taquerialaunion.png";
 import adventureessential from "./adventureessential.png";
 import camposlab from "./camposlab.png";
 import livelihoodkitchen from "./livelihoodkitchen.png";
 import tashan from "./tashan.png";
 
 export default {
+    taquerialaunion,
     offworld,
     interrobang,
     ProfilePhoto,

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://dlittlefield81.github.io/reactportfolio",
   "dependencies": {
+    "@calcom/embed-react": "^1.0.9",
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
